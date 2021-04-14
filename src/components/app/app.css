@@ -1,0 +1,79 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+@font-face {
+    font-family: 'edosz';
+    src: local('edosz'), url(../../fonts/edosz.ttf) format('woff');
+  }
+
+  @font-face {
+    font-family: 'SlimamifMedium';
+    src: local('SlimamifMedium'), url(../../fonts/SlimamifMedium.ttf) format('woff');
+  }
+  body {
+      font-family: SlimamifMedium;
+      color: black;
+      font-weight: 900;
+      margin: 100px;
+  }
+
+  button {
+    align-self: center;
+    background: transparent;
+    padding: 1px 1px;
+    margin: 6px 2px 2px;
+    transition: all 0.5s ease;
+    color: #41403E;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    outline: none;
+    box-shadow: 20px 38px 34px -26px rgb(0 0 0 / 20%);
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border: solid 1px #41403E;
+  }
+
+  input {
+    box-shadow: 20px 38px 34px -26px rgb(0 0 0 / 20%);
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border: solid 1px #41403E;
+    margin: 10px;
+  }
+/* 
+  button {
+   
+    width: 20px;
+    height: 20px;
+  background:url(../../img/trash.png) no-repeat;
+  background-size: 20px 20px;
+  } */

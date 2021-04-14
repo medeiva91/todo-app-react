@@ -1,0 +1,7 @@
+.important {
+  font-weight: 900;
+}
+
+.done {
+  text-decoration: line-through;
+}
