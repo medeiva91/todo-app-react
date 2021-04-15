@@ -18,7 +18,7 @@ export default class App extends Component {
       this.createItem("Позаниматься спортом")
     ],
     searchText: '',
-    filter: 'Active'
+    filter: 'All'
   }
 
   createItem(text) {
@@ -113,7 +113,7 @@ export default class App extends Component {
 
     const visibleItems = this.searchItems(this.filterItems(items, filter), searchText);
     return (
-      <div>
+      <div className="container">
         <AppHeader doneCount = { doneCount } todoCount = { todoCount }/>
         <ItemStatusFilter changeFilter={ this.onChangeFilter}/>
         <SearchPanel onSearchText = { this.onSearchText }/>
@@ -122,6 +122,7 @@ export default class App extends Component {
                   onToggleImportant = { this.onToggleImportant }
                   onToggleDone = { this.onToggleDone }/>
         <AddItemForm onItemAdded={ this.onItemAdded }/>
+
       </div>
       
     );

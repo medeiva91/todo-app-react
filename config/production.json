@@ -1,0 +1,6 @@
+{
+    "port": 80,
+    "jwtSecret": "",
+    "mongoUri": "",
+    "baseUrl": "http://todo-list-medeiva.ru/"
+  }
